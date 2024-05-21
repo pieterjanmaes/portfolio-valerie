@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@nuxt/fonts": "^0.7.0",
+    "@nuxthq/studio": "^1.1.0",
     "minireset.css": "^0.0.7",
     "plyr": "^3.7.8",
     "sass": "^1.77.2",

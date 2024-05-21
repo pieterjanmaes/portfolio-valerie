@@ -10,7 +10,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/content',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
+    '@nuxthq/studio'
   ],
 
   fonts: {
