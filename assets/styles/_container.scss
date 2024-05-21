@@ -1,0 +1,67 @@
+@use 'sass:math';
+
+$defaultPadding: 1.5rem;
+
+.u-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 $defaultPadding;
+
+  @each $bp in map-keys($breakpoints) {
+    @include media-query($bp) {
+      padding: 0 map-get($containerPaddings, $bp);
+      max-width: map-get($maxWidths, $bp);
+
+      @if not index($bp-small, $bp) {
+        padding: 0;
+      }
+    }
+
+    &-#{$bp} {
+      @each $bp in map-keys($breakpoints) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 map-get($containerPaddings, $bp);
+        max-width: map-get($maxWidths, $bp);
+
+        @include media-query($bp) {
+          max-width: map-get($maxWidths, $bp);
+          padding: 0 map-get($containerPaddings, $bp);
+
+          @if not index($bp-small, $bp) {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.u-half-container-md {
+
+  @include media-query(md) {
+    width: 100%;
+    padding: 0 $gutter-small;
+    margin: 0;
+
+    @each $bp in map-keys($breakpoints) {
+      @include media-query($bp) {
+        max-width: math.div(map-get($maxWidths, $bp), 2);
+      }
+    }
+  }
+}
+
+.u-container-none {
+
+  @each $bp in map-keys($breakpoints) {
+    @include media-query($bp) {
+      &-#{$bp} {
+        max-width: none;
+        padding: 0;
+      }
+    }
+  }
+}

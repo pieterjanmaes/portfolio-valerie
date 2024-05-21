@@ -1,0 +1,35 @@
+.plyr {
+  --plyr-range-thumb-background: transparent;
+  --plyr-range-thumb-shadow: none;
+  --plyr-range-thumb-active-shadow-width: 0;
+  --plyr-range-thumb-height: 1rem;
+  --plyr-range-track-height: 1rem;
+  --plyr-control-radius: 0;
+  --plyr-menu-radius: 0;
+  --plyr-tooltip-radius: 8px;
+
+  width: 100%;
+
+  // Fix video embed zoomed-in
+  .plyr__video-embed__container {
+    padding-bottom: 0 !important;
+    transform: translateY(0) !important;
+    height: 100% !important;
+  }
+}
+
+.dark-mode {
+  .plyr {
+    --plyr-color-main: #FF6490;
+    --plyr-video-range-track-background: #FFFFFF;
+    --plyr-video-background: #000000;
+  }
+}
+
+.light-mode {
+  .plyr {
+    --plyr-color-main: #1C42CC;
+    --plyr-video-range-track-background: #000000;
+    --plyr-video-background: #FFFFFF;
+  }
+}

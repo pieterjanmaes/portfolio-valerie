@@ -1,0 +1,122 @@
+$font-sizes: (
+  0: .75rem,
+  1: .875rem,
+  2: 1rem,
+  3: 1.125rem,
+  4: 1.25rem,
+  5: 1.5rem,
+  6: 1.75rem,
+  7: 2rem,
+  8: 2.25rem,
+  9: 2.5rem,
+  10: 3.25rem,
+);
+
+$line-heights: (
+  0: 1,
+  1: 1.2,
+  2: 1.5,
+);
+
+$font-variation-settings: (
+  0: ("wght" 90 , "wdth" 10, "ital" 0),
+  1: ("wght" 110 , "wdth" 10, "ital" 0),
+);
+
+$playfair-display: 'Playfair Display', serif;
+
+$font-heading: (
+  1: (
+    fontFamily: $playfair-display,
+    fontWeight: 400,
+    lineHeight: map-get($line-heights, 0),
+    fontSizeMobile: map-get($font-sizes, 7),
+    fontSizeDesktop: map-get($font-sizes, 10),
+  ),
+  2: (
+    fontFamily: $playfair-display,
+    fontWeight: 400,
+    lineHeight: map-get($line-heights, 1),
+    fontSizeMobile: map-get($font-sizes, 6),
+    fontSizeDesktop: map-get($font-sizes, 9),
+  ),
+  3: (
+    fontFamily: $playfair-display,
+    fontWeight: 400,
+    lineHeight: map-get($line-heights, 1),
+    fontSizeMobile: map-get($font-sizes, 5),
+    fontSizeDesktop: map-get($font-sizes, 7),
+  ),
+  4: (
+    fontFamily: $playfair-display,
+    fontWeight: 400,
+    lineHeight: map-get($line-heights, 1),
+    fontSizeMobile: map-get($font-sizes, 3),
+    fontSizeDesktop: map-get($font-sizes, 5),
+  ),
+  5: (
+    fontFamily: $playfair-display,
+    fontWeight: 400,
+    lineHeight: map-get($line-heights, 1),
+    fontSizeMobile: map-get($font-sizes, 3),
+    fontSizeDesktop: map-get($font-sizes, 5),
+  ),
+);
+
+$font-variations: (
+  xsmall: (
+    fontFamily: $playfair-display,
+    fontWeight: 400,
+    fontVariationSettings: map-get($font-variation-settings, 0),
+    lineHeight: map-get($line-heights, 2),
+    fontSizeMobile: map-get($font-sizes, 0),
+    fontSizeDesktop: map-get($font-sizes, 0),
+  ),
+);
+
+:root {
+  font-size: 16px;
+  font-family: $playfair-display;
+  font-style: normal;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@each $heading, $props in $font-heading {
+  h#{$heading},
+  .title-#{$heading} {
+    font-family: map-get($props, fontFamily);
+    font-weight: map-get($props, fontWeight);
+    font-size: map-get($props, fontSizeMobile);
+    line-height: map-get($props, lineHeight);
+
+    @include media-query(md) {
+      font-size: map-get($props, fontSizeDesktop);
+    }
+  }
+}
+
+@each $variation, $props in $font-variations {
+  .u-font-#{$variation} {
+    font-family: map-get($props, fontFamily);
+    font-weight: map-get($props, fontWeight);
+    font-size: map-get($props, fontSizeMobile);
+    line-height: map-get($props, lineHeight);
+
+    @if(map-get($props, fontVariationSettings)) {
+      font-variation-settings: map-get($props, fontVariationSettings);
+    }
+
+    @include media-query(md) {
+      font-size: map-get($props, fontSizeDesktop);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}

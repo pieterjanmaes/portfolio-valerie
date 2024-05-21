@@ -1,0 +1,108 @@
+$spacing-props: (
+  m: (margin),
+  mx: (margin-left margin-right),
+  my: (margin-top margin-bottom),
+  mt : (margin-top),
+  mr : (margin-right),
+  mb : (margin-bottom),
+  ml : (margin-left),
+  p : (padding),
+  px : (padding-left padding-right),
+  py : (padding-top padding-bottom),
+  pt : (padding-top),
+  pr : (padding-right),
+  pb : (padding-bottom),
+  pl: (padding-left),
+);
+
+$spacing-values-small: (
+  0: 0,
+  1: .25rem,
+  2: .25rem,
+  3: .5rem,
+  4: .5rem,
+  5: .75rem,
+  6: 1rem,
+  7: 1.25rem,
+  8: 2rem,
+  9: 2.5rem,
+  10: 3rem,
+  11: 4rem,
+  12: 5rem,
+  13: 5rem,
+);
+
+$spacing-values-medium: (
+  0: 0,
+  1: .25rem,
+  2: .5rem,
+  3: .75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  7: 2rem,
+  8: 2.5rem,
+  9: 4rem,
+  10: 5rem,
+  11: 6.5rem,
+  12: 9rem,
+  13: 10rem,
+);
+
+$spacing-values-large: (
+  0: 0,
+  1: .5rem,
+  2: .75rem,
+  3: 1rem,
+  4: 1.25rem,
+  5: 1.5rem,
+  6: 1.75rem,
+  7: 2.25rem,
+  8: 2.75rem,
+  9: 4.25rem,
+  10: 5.25rem,
+  11: 6.75rem,
+  12: 10rem,
+  13: 10rem,
+);
+
+@each $key1, $props in $spacing-props {
+  @each $key2, $value in $spacing-values-small {
+    .u-#{$key1}-#{$key2} {
+      @each $prop in $props {
+        #{$prop}: $value;
+
+        @each $bp in map-keys($breakpoints) {
+          @include media-query($bp) {
+
+            @if index($bp-medium, $bp) {
+              $valMedium: map-get($spacing-values-medium, $key2);
+              #{$prop}: $valMedium;
+
+            } @else if index($bp-large, $bp) {
+              $valLarge: map-get($spacing-values-large, $key2);
+              #{$prop}: $valLarge;
+            }
+          }
+
+          &-#{$bp} {
+            @each $bp in map-keys($breakpoints) {
+              @include media-query($bp) {
+                @if index($spacing-values-small, $bp) {
+                  $val: map-get($spacing-values-small, $key2);
+                  #{$prop}: $val;
+                } @else if index($bp-medium, $bp) {
+                  $val: map-get($spacing-values-medium, $key2);
+                  #{$prop}: $val;
+                } @else if index($bp-large, $bp) {
+                  $val: map-get($spacing-values-large, $key2);
+                  #{$prop}: $val;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

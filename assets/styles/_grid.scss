@@ -1,0 +1,67 @@
+.u-grid {
+  display: grid;
+  grid-template-columns: repeat($columns-small, 1fr);
+  grid-column-gap: ($gutter-small * 2);
+  grid-row-gap: ($gutter-small * 2);
+
+  @each $bp in map-keys($breakpoints) {
+    $gutter: map-get($gutters, $bp);
+
+    @include media-query($bp) {
+      grid-column-gap: ($gutter * 2);
+      grid-row-gap: ($gutter * 2);
+
+      @if index($screen-columns-large, $bp) {
+        grid-template-columns: repeat($columns-large, 1fr);
+      }
+    }
+
+    &-#{$bp} {
+      @include media-query($bp) {
+        display: grid;
+        grid-template-columns: repeat($columns-small, 1fr);
+        grid-column-gap: ($gutter * 2);
+        grid-row-gap: ($gutter * 2);
+
+        @if index($screen-columns-large, $bp) {
+          grid-template-columns: repeat($columns-large, 1fr);
+        }
+      }
+    }
+  }
+}
+
+// Still Work in Progress, not sure if this is the correct approach
+
+.u-grid-full {
+  display: grid;
+  grid-template-columns: 24px repeat($columns-small, 1fr) 24px;
+  grid-column-gap: ($gutter-small * 2);
+
+  @each $bp in map-keys($breakpoints) {
+    $gutter: map-get($gutters, $bp);
+
+    @include media-query($bp) {
+      grid-column-gap: ($gutter * 2);
+
+      @if $bp == 'md' {
+        grid-template-columns: 1fr repeat($columns-small, map-get($columnWidth, $bp)) 1fr;
+      }
+
+      @if index($screen-columns-large, $bp) {
+        grid-column-gap: ($gutter * 2);
+        grid-template-columns: 1fr repeat($columns-large, map-get($columnWidth, $bp)) 1fr;
+      }
+
+      &-#{$bp} {
+        display: grid;
+        grid-column-gap: ($gutter * 2);
+        grid-template-columns: auto repeat($columns-small, map-get($columnWidth, $bp)) auto;
+
+        @if index($screen-columns-large, $bp) {
+          grid-template-columns: auto repeat($columns-large, map-get($columnWidth, $bp)) auto;
+        }
+      }
+    }
+  }
+}

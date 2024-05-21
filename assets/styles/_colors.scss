@@ -1,0 +1,59 @@
+$blue: #1C42CC;
+$pink: #FF6490;
+$dark-100: #000000;
+$dark-200: #000000;
+$dark-300: #0d0d0d;
+$dark-400: #212121;
+$dark-500: #777777;
+$dark-600: #ffffff;
+$light-100: #ffffff;
+$light-200: #fefefe;
+$light-300: #f4f4f4;
+$light-400: #dbdbdb;
+$light-500: #8a8989;
+$light-600: #000000;
+
+$themes: (
+  light: (
+    accent: $blue,
+    on-base: $light-600,
+    on-base-sub: $light-500,
+    on-highlight: $light-100,
+    on-highlight-sub: $light-500,
+    background-base-1: $light-100,
+    background-base-2: $light-300,
+    background-chip: $light-300,
+    background-highlight: $light-600,
+    background-footer-bottom: #1a1a1a,
+    background-footer-text: $light-100,
+    background-footer-top: $light-600,
+    fixed-white: $light-100,
+    state-layer-default: #00000000,
+    state-layer-drag: #00000033,
+    state-layer-focus: #0000001f,
+    state-layer-hover: rgba(0, 0, 0, 0.04),
+    state-layer-press: #0000001f,
+    stroke-base: $light-400,
+  ),
+  dark: (
+    accent: $pink,
+    on-base: $dark-600,
+    on-base-sub: $dark-500,
+    on-highlight: $dark-100,
+    on-highlight-sub: $light-500,
+    background-base-1: $dark-100,
+    background-base-2: $dark-300,
+    background-chip: #313030,
+    background-highlight: $dark-600,
+    background-footer-bottom: $light-600,
+    background-footer-text: $light-100,
+    background-footer-top: #1a1a1a,
+    fixed-white: $light-100,
+    state-layer-default: #ffffff00,
+    state-layer-drag: #ffffff33,
+    state-layer-focus: #ffffff33,
+    state-layer-hover: #ffffff1f,
+    state-layer-press: #ffffff33,
+    stroke-base: $dark-400,
+  ),
+);

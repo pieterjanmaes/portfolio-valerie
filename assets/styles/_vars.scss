@@ -1,0 +1,80 @@
+@use 'sass:math';
+
+$border-radius: 0;
+
+$columns-small: 4;
+$columns-large: 12;
+
+$gutter-small: 8px;
+$gutter-medium: 12px;
+$gutter-large: 16px;
+
+$screen-extra-small: 375px;
+$screen-small: 576px;
+$screen-medium: 768px;
+$screen-large: 992px;
+$screen-x-large: 1200px;
+$screen-xx-large: 1440px;
+$screen-xxx-large: 1728px;
+$screen-mega: 1920px;
+
+$maxWidths: (
+  xs: 100%,
+  sm: 100%,
+  md: 696px,
+  lg: 912px,
+  xl: 1128px,
+  xxl: 1312px,
+  xxxl: 1456px,
+  mega: 1648px,
+);
+
+$containerPaddings: (
+  xs: 1.5rem,
+  sm: 1.75rem,
+  md: 2.25rem,
+  lg: 2.5rem,
+  xl: 2.25rem,
+  xxl: 4rem,
+  xxxl: 8.5rem,
+  mega: 8.5rem,
+);
+
+$columnWidth: (
+  xs: 1fr,
+  sm: 1fr,
+  md: 156px,
+  lg: 54px,
+  xl: 72px,
+  xxl: 80px,
+  xxxl: 92px,
+  mega: 108px,
+);
+
+$breakpoints: (
+  xs: $screen-extra-small,
+  sm: $screen-small,
+  md: $screen-medium,
+  lg: $screen-large,
+  xl: $screen-x-large,
+  xxl: $screen-xx-large,
+  xxxl: $screen-xxx-large,
+  mega: $screen-mega,
+);
+
+$gutters: (
+  xs: $gutter-small,
+  sm: $gutter-medium,
+  md: $gutter-medium,
+  lg: $gutter-medium,
+  xl: $gutter-large,
+  xxl: $gutter-large,
+  xxxl: $gutter-large,
+  mega: $gutter-large,
+);
+
+$bp-small: [xs, sm];
+$bp-medium: [md, lg, xl, xxl];
+$bp-large: [xxxl, mega];
+
+$screen-columns-large: [lg, xl, xxl, xxxl, mega];
