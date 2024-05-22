@@ -14,9 +14,16 @@ export default defineNuxtConfig({
     '@nuxthq/studio'
   ],
 
+  content: {
+    markdown: {
+      anchorLinks: false,
+    }
+  },
+
   fonts: {
     families: [
-      { name: 'Playfair display', provider: 'google' }
+      { name: 'Playfair display', provider: 'google' },
+      { name: 'Poppins', provider: 'google' }
     ]
   },
 
@@ -34,7 +41,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://valerievernaillen.be',
     name: 'Valerie Vernaillen',
-    description: 'CV Valerie Vernaillen',
+    description: 'Porfolio Valerie Vernaillen',
   },
 
   vite: {
@@ -44,6 +51,32 @@ export default defineNuxtConfig({
           additionalData: '@use "./assets/styles/_shared.scss" as *;',
         },
       },
+    },
+  },
+
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
+      htmlAttrs: {
+        lang: 'en',
+      },
+      meta: [
+        { name: 'msapplication-config', content: '/favicon/browserconfig.xml' },
+        { property: 'og:type', content: 'website' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
+        { rel: 'manifest', href: '/favicon/site.webmanifest' },
+        { rel: 'shortcut icon', href: '/favicon/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
+        { rel: 'mask-icon', href: '/favicons/safari-pinnend-tab.svg', color: '#000000' },
+      ],
+      script: [
+        {
+          src: 'https://cdn.plyr.io/3.7.8/plyr.js',
+        },
+      ],
     },
   },
 })

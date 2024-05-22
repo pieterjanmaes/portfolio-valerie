@@ -24,6 +24,7 @@ $font-variation-settings: (
 );
 
 $playfair-display: 'Playfair Display', serif;
+$poppins: 'Poppins', sans-serif;
 
 $font-heading: (
   1: (
@@ -41,21 +42,21 @@ $font-heading: (
     fontSizeDesktop: map-get($font-sizes, 9),
   ),
   3: (
-    fontFamily: $playfair-display,
+    fontFamily: $poppins,
     fontWeight: 400,
     lineHeight: map-get($line-heights, 1),
-    fontSizeMobile: map-get($font-sizes, 5),
-    fontSizeDesktop: map-get($font-sizes, 7),
+    fontSizeMobile: map-get($font-sizes, 3),
+    fontSizeDesktop: map-get($font-sizes, 5),
   ),
   4: (
-    fontFamily: $playfair-display,
+    fontFamily: $poppins,
     fontWeight: 400,
     lineHeight: map-get($line-heights, 1),
     fontSizeMobile: map-get($font-sizes, 3),
     fontSizeDesktop: map-get($font-sizes, 5),
   ),
   5: (
-    fontFamily: $playfair-display,
+    fontFamily: $poppins,
     fontWeight: 400,
     lineHeight: map-get($line-heights, 1),
     fontSizeMobile: map-get($font-sizes, 3),
@@ -76,7 +77,7 @@ $font-variations: (
 
 :root {
   font-size: 16px;
-  font-family: $playfair-display;
+  font-family: $poppins;
   font-style: normal;
   line-height: 1.5;
   font-synthesis: none;
@@ -119,4 +120,10 @@ $font-variations: (
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1rem;
 }

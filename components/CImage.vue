@@ -12,5 +12,9 @@
 </script>
 
 <style lang="scss">
-
+  .c-image {
+    img {
+      width: 100%;
+    }
+  }
 </style>

@@ -24,9 +24,19 @@
 
 <style lang="scss">
   .c-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+
     .u-container {
       display: flex;
       justify-content: space-between;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: black;
     }
 
     nav {

@@ -13,12 +13,20 @@
     &-inner {
       grid-column: 1 / 5;
 
+      h1 {
+        text-transform: uppercase;
+      }
+
       p {
         margin-bottom: 1rem;
       }
 
-      @include media-query(md) {
-        grid-column: 3 / 11;
+      @include media-query(lg) {
+        grid-column: 2 / 12;
+      }
+
+      @include media-query(xl) {
+        grid-column: 4 / 10;
       }
     }
   }

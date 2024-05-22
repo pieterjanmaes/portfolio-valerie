@@ -2,17 +2,11 @@
   <div class="page">
     <CHeader/>
 
-    <main>
+    <main class="u-mt-10">
       <NuxtPage/>
     </main>
-
-    <CFooter/>
   </div>
 </template>
-
-<script setup lang="ts">
-
-</script>
 
 <style lang="scss">
   html, body, #__nuxt {
@@ -22,7 +16,7 @@
 
   .page {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
     width: 100%;
     min-height: 100%;
     position: relative;
@@ -33,10 +27,6 @@
 
     main {
       grid-row: 2;
-    }
-
-    footer {
-      grid-row: 3;
     }
   }
 </style>
