@@ -30,7 +30,7 @@
       &-content {
         @include media-query(lg) {
           position: sticky;
-          top: 4.5rem;
+          top: 5rem;
         }
       }
     }

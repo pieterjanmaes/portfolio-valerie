@@ -12,7 +12,7 @@
   .c-hero-home {
     grid-column: 1 / 5;
 
-    @include media-query(md) {
+    @include media-query(lg) {
       grid-column: 2 / 12;
     }
   }

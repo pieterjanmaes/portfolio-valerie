@@ -2,9 +2,7 @@
   <div class="page">
     <CHeader/>
 
-    <main class="u-mt-10">
-      <NuxtPage/>
-    </main>
+    <NuxtPage/>
   </div>
 </template>
 
@@ -15,18 +13,8 @@
   }
 
   .page {
-    display: grid;
-    grid-template-rows: auto 1fr;
+    position: relative;
     width: 100%;
     min-height: 100%;
-    position: relative;
-
-    header {
-      grid-row: 1;
-    }
-
-    main {
-      grid-row: 2;
-    }
   }
 </style>

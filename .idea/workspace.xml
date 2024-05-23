@@ -4,47 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14490a49-51b6-4958-b737-c27030505e88" name="Changes" comment="Add all content">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CHeroProject.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CPrevNext.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CTitleText.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CVideo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/2.portfolio/1.world-chocolate-masters-world-final.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/2.portfolio/10.carglass-roadshow.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/2.portfolio/2.world-chocolate-masters-bootcamp.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/2.portfolio/3.barry-callebaut-fairs.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/2.portfolio/5.vab-beurzen.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/2.portfolio/6.samsung-digital-employment-day.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/2.portfolio/7.antwerp-city-drops.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/2.portfolio/8.het-goede-doelhof.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/2.portfolio/9.mini-countryman.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/het-goede-doelhof.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portolio-valerie.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="bd69d90f-9ae1-4b72-a5c0-688fbb872ed2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/CLogo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/barry-callebaut-fairs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-bootcamp/Bootcamp_WCM_2022_GroupGodFather_L1080881.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-bootcamp/Bootcamp_WCM_2022_L1004856.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-bootcamp/Bootcamp_WCM_2022_L1005294.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-bootcamp/Bootcamp_WCM_2022_L1005616.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-bootcamp/Bootcamp_WCM_2022_L1080624.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-bootcamp/Bootcamp_WCM_2022_L1080645.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-bootcamp/Bootcamp_WCM_2022_L1080649.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-bootcamp/Bootcamp_WCM_2022_L1090095.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/3E4A1179-3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/3E4A1579-2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/D1-Ambience_4094.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/D1-Briefing_4052.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/D1-Briefing_4072.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/D1-G1_InProgress_4576.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/D2_G2_BONBON_6355.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/D3_PRIZEGIVING_5144.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/D3_PRIZEGIVING_8371.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wcm-finale/proclamation-8441.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logoV.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/_font.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/_font.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/CContent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CFooter.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/CHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/CHero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/CHero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CImage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/CImage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CPortfolioOverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/CPortfolioOverview.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CTitleText.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/CTitleText.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/1.index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/1.index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/2.portfolio/0.index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/2.portfolio/0.index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/2.portfolio/1.bmw-the-reveal.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/2.portfolio/4.bmw-the-reveal.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/2.portfolio/2.vab-beurzen.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/2.portfolio/3.samsung-digital-employment-day.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/2.portfolio/4.antwerp-city-drops.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/2.portfolio/5.het-goede-doelhof.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/2.portfolio/6.mini-countryman.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/2.portfolio/7.carglass-roadshow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/2.portfolio/1.world-chocolate-masters-world-final.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/2.portfolio/1.world-chocolate-masters-world-final.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/2.portfolio/2.world-chocolate-masters-bootcamp.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/2.portfolio/2.world-chocolate-masters-bootcamp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/2.portfolio/3.barry-callebaut-fairs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/2.portfolio/3.barry-callebaut-fairs.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/3.about.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/3.about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/het-goede-doolhof.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +47,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="2geXAFgWiFh9V86m6D7IbH2rJvX" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2gs6lfXI1gpnOoZY4q5AiJFCoi3" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -71,11 +61,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/pieterjanmaes/Documents/bb/portolio-valerie",
+    "last_opened_file_path": "/Users/pieterjanmaes/Documents/bb/portfolio-valerie/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,83 +76,27 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/images/wcm-bootcamp" />
+      <recent name="$PROJECT_DIR$/public/images/wcm-finale" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="14490a49-51b6-4958-b737-c27030505e88" name="Changes" comment="" />
-      <created>1716058872081</created>
+      <changelist id="bd69d90f-9ae1-4b72-a5c0-688fbb872ed2" name="Changes" comment="" />
+      <created>1716474091218</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716058872081</updated>
-      <workItem from="1716058873421" duration="11162000" />
-      <workItem from="1716314245560" duration="9404000" />
-      <workItem from="1716398362348" duration="11416000" />
+      <updated>1716474091218</updated>
+      <workItem from="1716474092757" duration="2433000" />
     </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1716314452686</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1716314452687</updated>
-    </task>
-    <task id="LOCAL-00002" summary="update package">
-      <option name="closed" value="true" />
-      <created>1716316352258</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1716316352258</updated>
-    </task>
-    <task id="LOCAL-00003" summary="install NuxtStudio">
-      <option name="closed" value="true" />
-      <created>1716316873894</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1716316873894</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="update package" />
-    <MESSAGE value="install NuxtStudio" />
-    <MESSAGE value="Add all content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all content" />
   </component>
 </project>
