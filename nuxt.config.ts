@@ -1,5 +1,6 @@
 import { fileURLToPath } from 'url';
 import { createResolver } from '@nuxt/kit';
+import { vite as vidstack } from 'vidstack/plugins';
 
 const { resolve } = createResolver(import.meta.url);
 const currentDir: string = dirname(fileURLToPath(import.meta.url));
@@ -11,12 +12,21 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/fonts',
-    '@nuxthq/studio'
+    '@nuxthq/studio',
+    '@vesp/nuxt-fontawesome',
   ],
 
   content: {
+    documentDriven: true,
     markdown: {
       anchorLinks: false,
+    }
+  },
+
+  fontawesome: {
+    icons: {
+      solid: ['envelope'],
+      brands: ['linkedin']
     }
   },
 
@@ -52,6 +62,13 @@ export default defineNuxtConfig({
         },
       },
     },
+    plugins: [vidstack()],
+  },
+
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag.startsWith('media-'),
+    },
   },
 
   app: {
@@ -64,13 +81,14 @@ export default defineNuxtConfig({
       meta: [
         { name: 'msapplication-config', content: '/favicon/browserconfig.xml' },
         { property: 'og:type', content: 'website' },
+        { 'http-equiv': 'Permissions-Policy', content: 'interest-cohort=()' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
         { rel: 'manifest', href: '/favicon/site.webmanifest' },
         { rel: 'shortcut icon', href: '/favicon/favicon.ico' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
-        { rel: 'mask-icon', href: '/favicons/safari-pinnend-tab.svg', color: '#000000' },
+        { rel: 'mask-icon', href: '/favicon/safari-pinnend-tab.svg', color: '#000000' },
       ],
       script: [
         {

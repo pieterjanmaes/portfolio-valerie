@@ -1,31 +1,23 @@
 <template>
   <div class="c-video u-py-4">
-    <div id="player" data-plyr-provider="youtube" :data-plyr-embed-id="embedId"/>
+    <media-player :src="`youtube/${embedId}`" playsInline>
+      <media-provider></media-provider>
+      <media-video-layout></media-video-layout>
+    </media-player>
   </div>
 </template>
 
 <script setup lang="ts">
-  const player = ref(null);
+  import 'vidstack/bundle';
 
   defineProps<{
     embedId: string;
-  }>()
+  }>();
 
-  onMounted(() => {
-    player.value = new Plyr(
-      document.getElementById('player'),
-      {
-        controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
-        youtube: { noCookie: true, rel: 0 }
-      }
-    )
-  });
 </script>
 
 <style lang="scss">
-  .c-video {
-    display: block;
-    position: relative;
-    width: 100%;
+  iframe.vds-youtube[data-no-controls] {
+    height: 100% !important;
   }
 </style>

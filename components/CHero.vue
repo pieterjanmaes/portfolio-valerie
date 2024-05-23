@@ -1,15 +1,18 @@
 <template>
   <div class="u-container">
     <div class="u-grid">
-      <div class="c-hero-home u-py-10">
+      <div class="c-hero u-py-10">
         <slot/>
       </div>
     </div>
   </div>
 </template>
 
+<script setup lang="ts">
+</script>
+
 <style lang="scss">
-  .c-hero-home {
+  .c-hero {
     grid-column: 1 / 5;
 
     @include media-query(lg) {
