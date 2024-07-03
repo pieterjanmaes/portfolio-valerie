@@ -12,7 +12,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/fonts',
-    '@nuxthq/studio',
     '@vesp/nuxt-fontawesome',
   ],
 
