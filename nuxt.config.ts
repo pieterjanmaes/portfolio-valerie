@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/fonts',
     '@vesp/nuxt-fontawesome',
+    '@nuxthq/studio'
   ],
 
   content: {
